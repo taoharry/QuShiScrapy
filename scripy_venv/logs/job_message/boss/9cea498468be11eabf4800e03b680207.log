@@ -1,0 +1,1381 @@
+2020-03-18 10:17:31 [scrapy.utils.log] INFO: Scrapy 2.0.0 started (bot: job_message)
+2020-03-18 10:17:31 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-18 10:17:31 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'job_message',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_IP': 3,
+ 'LOG_FILE': 'logs\\job_message\\boss\\9cea498468be11eabf4800e03b680207.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'job_message.spiders',
+ 'SPIDER_MODULES': ['job_message.spiders']}
+2020-03-18 10:17:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'job_message.middle.spider_stats.SpiderStatsMid']
+2020-03-18 10:17:31 [boss] INFO: Boss webdrive start
+2020-03-18 10:17:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'job_message.middle.user_agent.UserAgentMid',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'job_message.middlewares.JsMiddleware']
+2020-03-18 10:17:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-18 10:17:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['job_message.pipelines.MysqlPoolInsertPipeline']
+2020-03-18 10:17:37 [scrapy.core.engine] INFO: Spider opened
+2020-03-18 10:17:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-18 10:17:37 [py.warnings] WARNING: e:\pachong\scripy_venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.zhipin.com in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2020-03-18 10:17:37 [boss] INFO: Boss crawl start
+2020-03-18 10:17:37 [boss] INFO: Boss page:1
+2020-03-18 10:17:37 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=1&ka=page-1
+2020-03-18 10:17:39 [boss] INFO: Boss page:2
+2020-03-18 10:17:39 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=2&ka=page-2
+2020-03-18 10:17:40 [boss] INFO: Boss page:3
+2020-03-18 10:17:40 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=3&ka=page-3
+2020-03-18 10:17:44 [boss] INFO: Boss page:4
+2020-03-18 10:17:44 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=4&ka=page-4
+2020-03-18 10:17:48 [boss] INFO: Boss page:5
+2020-03-18 10:17:48 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=5&ka=page-5
+2020-03-18 10:17:52 [boss] INFO: Boss page:6
+2020-03-18 10:17:52 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=6&ka=page-6
+2020-03-18 10:17:52 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:17:52 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:17:52 [boss] ERROR: {'business': '企业服务',
+ 'company': '江泰优投',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '优投是为中国企业跨境投资提供全球投资贸易服务的平台。优投平台连接中国走出去企业与全球当地服务供应商，以交易撮合为核心，优秘为特色辅助，帮助企业对接全球投资贸易服务提供商，服务中国企业进行跨境兼并收购、投资建厂、工程承包、商业服务等四投活动。优投平台通过服务商为优投会员提供商务代理、语言翻译、人力资源\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '江泰优投',
+ 'company_url': '/gongsi/e31846659a05566e0nV70tS_.html',
+ 'crawl_time': '2020-03-18 10:17:44.338650',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '20-99人',
+ 'hr_name': '王先生',
+ 'money': '18-20K',
+ 'postion': 'python爬虫工程师（可兼职）',
+ 'postion_describe': 'python爬虫工程师（可兼职）工作内容:1.对互联网整体网页进行分析，根据具体业务情景制定爬虫需求；2.综合各种网页类型爬取难度和实际业务情况，确定相关策略进行挖掘处理；3.能自主搭建互联网数据获取工具的框架。职位要求:1.本科学历及以上,计算机相关专业优先2.精通Python语言，熟练掌握Python框架和常用包3.精通网页抓取原理及技术，精通正则表达式，从结构化的和非结构化的数据中获取信息；',
+ 'postion_url': 'https://www.zhipin.com/job_detail/cf1d610d542105eb1nV83t27FVE~.html',
+ 'public_time': '2020-03-18 10:17:44.338650',
+ 'scaley': '不需要融资',
+ 'tag': 'Python-python爬虫-网络爬虫',
+ 'update_num': 0,
+ 'worker_location': '北京市朝阳区江苏广电大厦1303'}
+2020-03-18 10:17:52 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:17:52 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:17:52 [boss] ERROR: {'advantage': '餐补，定期体检，带薪年假，员工旅游，年终奖，补充医疗保险，五险一金，节日福利，通讯补贴',
+ 'business': '移动互联网',
+ 'company': '凤凰网',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '凤凰新媒体（纽交所代码：FENG)创建于1998年，是全球领先的跨平台网络新媒体公司，整合旗下综合门户凤凰网（www.ifeng.com）、手机凤凰网（3g.ifeng.com）及移动客户端、凤凰视频（v.ifeng.com）三大平台，秉承"中华情怀，全球视野，包容开放，进步力量"\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '凤凰网',
+ 'company_url': '/gongsi/19c9d466689302e21nd93ts~.html',
+ 'crawl_time': '2020-03-18 10:17:48.078346',
+ 'education': '本科',
+ 'experience': '1-3年',
+ 'financing': '1000-9999人',
+ 'hr_name': '赵女士',
+ 'money': '15-25K',
+ 'postion': 'Python爬虫工程师 (MJ000130)',
+ 'postion_describe': '【岗位职责】：1.编写抓取互联网内容的爬虫，攻克反爬严格的网站；2.数据抽取核心算法的编写与优化，提升爬虫抓取效率和质量；3.抓取策略算法的更新维护，以及确保数据抽取准确、高效。【任职要求】：1.理工科专业，本科以上学历；2.熟悉多线程、多进程、网络通信编程相关知识；3.熟练使用python\xa0\xa0'
+                     'nodeJs\xa0'
+                     '进行爬虫开发，熟悉scrapy爬虫框架，puptter，selenium动化测试及phantomJS；4.熟悉JavaScrip、HTML、XML、CSS技术，熟悉网页抓取原理及技术，熟悉正则表达式，从结构化的和非结构化的数据中获取信息；5.具有js逆向，app逆向相关经验。熟悉js\xa0'
+                     'hook\xa0原理\xa0'
+                     ',熟悉各种反爬风控常见手段；5.具有团队合作精神，有责任感，对工作认真负责，有较强的协调和沟通能力',
+ 'postion_url': 'https://www.zhipin.com/job_detail/5fe4df793126b6e70X1z2dy9E1c~.html',
+ 'public_time': '2020-03-18 10:17:48.078346',
+ 'scaley': '已上市',
+ 'tag': 'Python-网络爬虫技术-逆向',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区中轻大厦(溪阳东路)'}
+2020-03-18 10:17:52 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:17:52 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:17:52 [boss] ERROR: {'business': '数据服务',
+ 'company': '网智天元',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        企业介绍Company '
+                     'introduction      '
+                     '北京网智天元科技股份有限公司是中国新三板第一家大数据科技公司（股票代码：832112），公司致力于应用互联网智能技术，创造大数据价值，专注于大数据采集集成、舆情管理导控、大数据挖掘分析、大数据传播营销服务，成为国际领先的大数据智能软\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '网智天元',
+ 'company_url': '/gongsi/b61717397a23b9e31nB6392-.html',
+ 'crawl_time': '2020-03-18 10:17:49.239630',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '100-499人',
+ 'hr_name': '殷女士',
+ 'money': '12-20K',
+ 'postion': '爬虫/数据抓取工程师',
+ 'postion_describe': '岗位职责：1、负责分布式爬虫系统的核心技术研究、架构设计、系统规划；2、负责爬虫核心算法的策略优化，提升网页抓取的效率和质量；3、负责研究各种网站、论坛、社交媒体实现多种媒体资源抓取实现；4、反爬策略的设计及优化；5、负责业务需求分析、系统设计、开发计划的制定与跟进；6、负责爬虫系统研发过程跟进、代码Review、质量控制；7、负责研发团队的管理及沟通协调。任职要求：1、本科或以上学历，5年以上开发经验，3年以上爬虫研发管理经验；2、具有分布式爬虫系统框架设计能力，以及爬虫项目规划能力；3、熟悉网络编程、熟悉多线程机制、有过Socket '
+                     'HTTP网络编程项目经验；4、模拟浏览器操作爬虫，了解网页抓取原理及技术，精通正则表达式，具备网络爬虫项目经验；5、具有分布式爬虫的开发以及维护工作经验，开发更具实时性以及准确性的高性能爬虫；6、具有互联网应用行业经验，具备快速学习新理念及技术,有务实的工作态度与扎实的软件开发理论基础。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/2994b45584c7242a0XN62tq7FVI~.html',
+ 'public_time': '2020-03-18 10:17:49.239630',
+ 'scaley': 'B轮',
+ 'tag': 'Python-网络爬虫技术',
+ 'update_num': 0,
+ 'worker_location': '北京市 西城区 新华1949园区 新华1949园区西门33幢'}
+2020-03-18 10:18:00 [boss] INFO: Boss page:7
+2020-03-18 10:18:00 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=7&ka=page-7
+2020-03-18 10:18:00 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:00 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:00 [boss] ERROR: {'advantage': '股票期权，节日福利，定期体检，交通补助，补充医疗保险，年终奖，免费班车，餐补，带薪年假，公积金高，员工旅游，五险一金，包吃',
+ 'business': '互联网',
+ 'company': '小米',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '小米公司成立于2010年4月，是一家有实体经济的互联网公司。小米公司是专注于智能手机、智能家居、互联网电视的创新型科技企业。同时，在互联网金融（支付、信贷、保险、理财等）、互娱和影业等领域也积极布局，并初具规模。小米用互联网开发模式、极客精神研发产品，致力于让每个人都能享受科技的乐趣。2011年\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '小米',
+ 'company_url': '/gongsi/6f1aa1d6b1d033ad33B43N0~.html',
+ 'crawl_time': '2020-03-18 10:17:52.727846',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '肖女士',
+ 'money': '25-35K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '职位描述：•\t设计和开发分布式网络爬虫系统，进行多平台信息的抓取和分析工作，实时监控爬虫的进度和警报反馈•\t'
+                     '网页信息和APP数据抽取、清洗、消重等工作职位要求：•\t有扎实的算法和数据结构能力•\t'
+                     '熟悉整个爬虫的设计及实现流程，有大规模网页信息抽取开发经验•\t熟悉各种反爬虫技术，有分布式爬虫架构经验•\t'
+                     '掌握http协议，熟悉html、dom、xpath等常见的数据抽取技术•\t'
+                     '有大规模数据处理、数据挖掘、信息提取等经验者优先',
+ 'postion_url': 'https://www.zhipin.com/job_detail/8ef9ab5fd59bfcb60X1539y1GFY~.html',
+ 'public_time': '2020-03-18 10:17:52.727846',
+ 'scaley': '已上市',
+ 'tag': 'HTML-分布式技术-网络爬虫技术-数据挖掘',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 科利源大厦'}
+2020-03-18 10:18:00 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:00 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:00 [boss] ERROR: {'advantage': '五险一金，带薪年假，股票期权，零食下午茶，年终奖',
+ 'business': '计算机软件',
+ 'company': '奥英数创',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '公司名称：奥英数创（北京）科技有限公司奥英数创的团队做什么？容器云！企业服务软件及平台！我们能做什么？提供一种标准化的应用发布方式，建立一套完整的应用架构体系。我们的产品特点：稳定可靠；上手简单好用：安装简单、运维简单；高独立性和自主性。客户使用优势：大幅度降低（5-1\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '奥英数创',
+ 'company_url': '/gongsi/26cdf6218d6be1771nVz29u0Fw~~.html',
+ 'crawl_time': '2020-03-18 10:17:54.367834',
+ 'education': '本科',
+ 'experience': '1-3年',
+ 'financing': '0-20人',
+ 'hr_name': '沈女士',
+ 'money': '14-28K·14薪',
+ 'postion': 'Python爬虫工程师',
+ 'postion_describe': 'Python爬虫工程师 '
+                     '岗位描述：1.设计和开发分布式爬虫和调度系统，负责爬虫核心算法和调度策略优化；2.负责数据抽取、解析、清洗、消重、数据结构化等工作，研究爬虫的应用策略和网站的防爬机制，提升网页抓取的效率和质量；3.负责网络信息搜集方向的研究与开发，应用海量网页抓取、信息精准抽取等搜索核心技术，构建高可用性、高可扩展性的网络信息搜集平台；岗位要求：1.Python工作经验2年以上，熟悉Python常用函数库，熟练掌握Xpath和正则表达式；2.精通常用的Python爬虫框架中的一种或多种，熟悉Scrapy、Pyspider框架中的至少一种；3.熟练掌握网页抓取原理及解析技术，对SQL优化有一定的经验，熟悉基于正则表达式、XPath、CSS等网页信息抽取技术；4.较强的系统设计和编码能力，追求优雅的设计和优秀的代码质量；5.具有Hadoop、HBase、Spark、MapReduce等分布式存储和计算使用和开发经验者优先',
+ 'postion_url': 'https://www.zhipin.com/job_detail/1b49c64c0688b4300XR73Ny6FFs~.html',
+ 'public_time': '2020-03-18 10:17:54.367834',
+ 'scaley': 'A轮',
+ 'tag': 'Python-CSS-SQL-分布式技术-网络爬虫技术-Hadoop-Spark-算法设计',
+ 'update_num': 0,
+ 'worker_location': '北京市 朝阳区 望京SOHO'}
+2020-03-18 10:18:00 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:00 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:00 [boss] ERROR: {'advantage': '不定期培训，购房福利，餐补，五险一金，商业保险，全勤奖，年终奖，补充医疗保险，节日福利，带薪年假，定期体检',
+ 'business': '互联网',
+ 'company': '好未来',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北京世纪好未来教育科技有限公司（NYSE：TAL）是一个以智慧教育和开放平台为主体，以素质教育和课外辅导为载体，在全球范围内服务公办教育，助力民办教育，探索未来教育新模式的科技教育公司。2010年10月，好未来的前身学而思在美国纽交所正式挂牌交易，成为国内首家在美上市的中小学教育机构。好未来全面\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '好未来',
+ 'company_url': '/gongsi/efa878c051261c7433Z6.html',
+ 'crawl_time': '2020-03-18 10:17:55.762101',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '张女士',
+ 'money': '20-40K',
+ 'postion': 'Python爬虫工程师',
+ 'postion_describe': '岗位职责： 1、负责爬虫系统的核心架构设计以及系统规划。 2、负责行业特定数据的抓取工作。 '
+                     '3、结合业务背景，优化爬虫路由调度策略，完善爬虫体系。 职位要求： 1、计算机相关专业 '
+                     '（有抖音、快手、公众号平台经验优先）2、有较强的学习能力、喜欢钻研和解决问题、乐于分享 '
+                     '3、掌握PC网页抓取原理及技术，包括基于Cookie的登录管理，基于headless的采集，熟悉正则表达式、XPath、Jsoup等网页信息抽取技术。 '
+                     '4、对APP采集有丰富经验，有抖音，快手，公众号等平台抓取经验优先，抓包工具，中间人代理二次开发以及APP模拟器等优先考虑。 '
+                     '5、有APP反编译识别，修改内核浏览器经验者，优先考虑。 '
+                     '6、熟悉Scrapy、Pyspider、nutch等主流爬虫框架使用，了解js引擎技术等优先考虑 '
+                     '7、有数据爬取、通用爬取、爬虫平台搭建处理经验优先考虑 '
+                     '8、有机器学习、自然语言处理、图像处理等学习背景和经验的优先考虑 '
+                     '9、具备较强的团队协作精神，工作责任心强，良好的沟通、理解和执行能力',
+ 'postion_url': 'https://www.zhipin.com/job_detail/952c8994ee1c7dab0HRy3dy8ElQ~.html',
+ 'public_time': '2020-03-18 10:17:55.762101',
+ 'scaley': '已上市',
+ 'tag': 'JavaScript-网络爬虫技术-移动端-架构师-深度学习算法-自然语言处理-抖音快手公众号平台',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 丹棱SOHO 15层 好未来'}
+2020-03-18 10:18:09 [boss] INFO: Boss page:8
+2020-03-18 10:18:09 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=8&ka=page-8
+2020-03-18 10:18:09 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:09 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:09 [boss] ERROR: {'advantage': '带薪年假，全勤奖，节日福利，零食下午茶，加班补助，五险一金，员工旅游，交通补助，餐补',
+ 'business': '互联网',
+ 'company': '搜狐焦点',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        快手\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '搜狐焦点',
+ 'company_url': '/gongsi/7c095e31a60edfb83n173N8~.html',
+ 'crawl_time': '2020-03-18 10:18:00.957966',
+ 'education': '不限',
+ 'experience': '不限',
+ 'financing': '1000-9999人',
+ 'hr_name': '薛先生',
+ 'money': '20-30K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '职责描述1、负责分布式爬虫系统的核心架构设计以及系统规划。2、负责特定网站的抓取工作。3、负责爬虫前沿技术探索与创新。4、结合业务背景，优化爬虫路由调度策略，完善爬虫体系。职位要求1、计算机相关专业2、有较强的学习能力；思维活跃；喜欢钻研和解决问题；乐于分享3、掌握PC网页抓取原理及技术，包括基于Cookie的登录管理，基于headless的采集，熟悉正则表达式、XPath、Jsoup等网页信息抽取技术。4、对APP采集有丰富经验，包括抓包工具，中间人代理二次开发以及APP模拟器等优先考虑。5、有APP反编译识别，修改内核浏览器经验者，优先考虑。6、熟悉Scrapy、Pyspider、nutch等主流爬虫框架使用，了解js引擎技术等优先考虑7、有数据爬取、通用爬取、爬虫平台搭建处理经验优先考虑8、有机器学习、自然语言处理、图像处理等学习背景和经验的优先考虑9.具备较强的团队协作精神，工作责任心强，良好的沟通、理解和执行能力',
+ 'postion_url': 'https://www.zhipin.com/job_detail/1e130732c861c02a1nN63t61FFo~.html',
+ 'public_time': '2020-03-18 10:18:00.957966',
+ 'scaley': '已上市',
+ 'tag': '爬虫架构',
+ 'update_num': 0,
+ 'worker_location': '北京市海淀区融科资讯中心C座20层'}
+2020-03-18 10:18:09 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:09 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:09 [boss] ERROR: {'advantage': '定期体检，五险一金，带薪年假，节日福利，年终奖，补充医疗保险，零食下午茶',
+ 'business': '互联网',
+ 'company': '棱角星空',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        ""\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '棱角星空',
+ 'company_url': '/gongsi/f953db3138845c441Hd73d-_Ew~~.html',
+ 'crawl_time': '2020-03-18 10:18:02.110254',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '0-20人',
+ 'hr_name': '刘女士',
+ 'money': '15-30K',
+ 'postion': '高级爬虫工程师',
+ 'postion_describe': '岗位职责：1、负责多平台信息爬取和页面内容的提取分析，负责破解各类反爬机制；2、负责APP的数据抓取和爬取链路优化（包括APP反编译、逆向分析、脱壳、加密参数破解、抓取攻防等），提升抓取能力；3、负责HTTP、AJAX等各类网络请求分析，探索和研究高效的数据抓取解决方案；4、研究爬虫策略和防屏蔽规则，解决封账号、封IP、验证码、页面跳转等难点，提升网页抓取的效率和质量；5、不断完善和重构现有爬虫系统，通过对抓取、解析、调度、存储等模块的拆分与优化，构建和完善统一的抓取服务平台。岗位要求：1、全日制本科及以上学历，计算机相关专业，3年及以上爬虫经验；2、精通至少一门开发语言，如Python；3、有过大型平台爬取经验，例如淘宝、大众点评、美团、携程天猫（抓取难度高的）等；4、精通爬虫和反爬技术，精通HttpClient/jsoup/XPath/CSS/正则表达式/验证码加密处理/代理池等网页信息抽取技术，精通HTTP底层协议；5、精通动态网页抓取、浏览器模拟抓取、APP抓取等技术；6、熟悉网页抓取原理及技术，熟悉基于Cookie的网站登录原理；',
+ 'postion_url': 'https://www.zhipin.com/job_detail/6cd386aa659cefa40Xx42tS0GVc~.html',
+ 'public_time': '2020-03-18 10:18:02.110254',
+ 'scaley': '不需要融资',
+ 'tag': 'Python-CSS-分布式技术-移动端-网络爬虫技术-反爬虫-反爬技术-爬虫经验',
+ 'update_num': 0,
+ 'worker_location': '北京市 朝阳区 住总地产大厦'}
+2020-03-18 10:18:09 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:09 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:09 [boss] ERROR: {'advantage': '五险一金，股票期权，加班补助，住房补贴，年终奖，带薪年假，员工旅游，节日福利',
+ 'business': '互联网',
+ 'company': '亿欧',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '亿欧（www.iyiou.com）是一家致力于推动新科技、新理念、新政策引入实体经济的科技与产业创新服务平台。亿欧公司旗下有产品：科技与产业创新信息服务平台“亿欧网”、科技与产业创新研究院“亿欧智库”、科技与产业创新人物短视频项目“亿欧视也\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '亿欧',
+ 'company_url': '/gongsi/c018bed388c3142a1HZ72d-1.html',
+ 'crawl_time': '2020-03-18 10:18:03.327503',
+ 'education': '本科',
+ 'experience': '5-10年',
+ 'financing': '100-499人',
+ 'hr_name': '宋先生',
+ 'money': '18-35K',
+ 'postion': '资深python爬虫工程师',
+ 'postion_describe': '具体薪资可面议。岗位职责：1、\t负责大规模、多终端适配、分布式爬虫系统的设计及开发；2、\t'
+                     '负责网站、网页、公众号链接的特征挖掘，进行数据抓取、提取、清洗、入库；3、\t'
+                     '设计足够通用和灵活的反爬虫策略；4、\t负责爬虫核心算法的优化研究，充分利用资源，避免受限；5、\t'
+                     '对接业务方需求，分配并管理爬虫团队的工作和结果质量验收与交付。任职要求：1、\t'
+                     '国内外知名大学，统招研究生或本科，计算机或相关专业；2、\t'
+                     '三年以上爬虫开发经验，两年以上大规模爬虫系统开发经验优先；3、\t'
+                     '熟悉爬虫原理，掌握常见的反爬虫技术，精通Scrapy框架，熟练使用Splash；4、\t'
+                     '精通WebDriver，掌握http协议，熟悉html、dom、xpath等常见的数据抽取技术；5、\t'
+                     '熟练使用MySQL、MongoDB，熟悉Hadoop、HBase、Elastic Search等技术；6、\t'
+                     '扎实的算法和数据结构能力，有大规模代理服务器管理经验和模板失效应对的经验优先；7、\t'
+                     '具有BAT及TAM等知名公司爬虫开发实操经验者优先。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/7b0119a9b872b5c80Xx93Nm0E1Q~.html',
+ 'public_time': '2020-03-18 10:18:03.326504',
+ 'scaley': 'C轮',
+ 'tag': '分布式技术-网络爬虫技术-搜索引擎技术-MySQL-NoSQL-Hadoop-Python',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区中电发展大厦A座10层'}
+2020-03-18 10:18:09 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:09 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:09 [boss] ERROR: {'advantage': '餐补，股票期权，定期体检，加班补助，节日福利，带薪年假，补充医疗保险，年终奖，五险一金',
+ 'business': '互联网',
+ 'company': '搜狗',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '搜狗是中国互联网领先的搜索、输入法、浏览器和其它互联网产品及服务提供商。从2004年8月搜狐公司推出全球首个第三代互动式中文搜索引擎——搜狗搜索以来，历经十载，搜狗搜索已发展成为PC端搜索三强之一，移动搜索排名第二。根据艾瑞咨询2015年8月数据，搜狗PC用户规模达5.21亿\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '搜狗',
+ 'company_url': '/gongsi/92f44a5f422a7d6f1nVy2Nk~.html',
+ 'crawl_time': '2020-03-18 10:18:04.944509',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '1000-9999人',
+ 'hr_name': '陈先生',
+ 'money': '25-35K·15薪',
+ 'postion': 'Python高级爬虫开发工程师',
+ 'postion_describe': '职位职责：1、能够准确理解产品需求，负责爬虫平台功能开发和优化；2、负责公司大数据部门的各项数据抓取需求；3、负责Java/Python后台架构搭建，性能方面的优化，解决相关的疑难问题；4、负责研究Python爬虫和后台相关的各种框架或新技术并在程序中进行合理的应用；5、团队技术体系的搭建和完善，推进团队内各项制度流程完善；任职要求：1、有优良的编程风格和习惯，本科及以上学历，计算机相关专业；2、掌握基本数据结构和算法，能够灵活使用编程技巧和设计模式等相关知识；3、扎实的Python开发基础，能够独立承担开发任务；4、能够熟练使用过数据库（如：MySQL），缓存（如：Redis）；5、有强烈的责任心，工作态度严谨，能承担较大工作压力，具备良好的沟通能力和团队合作精神；6、具有Java后台和前端相关开发经验者优先。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/086c04f729f0fd4d1Hx93ti6F1E~.html',
+ 'public_time': '2020-03-18 10:18:04.944509',
+ 'scaley': '已上市',
+ 'tag': 'Python-爬虫架构-爬虫工程师',
+ 'update_num': 0,
+ 'worker_location': '北京海淀区搜狐网络大厦'}
+2020-03-18 10:18:16 [boss] INFO: Boss page:9
+2020-03-18 10:18:16 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=9&ka=page-9
+2020-03-18 10:18:16 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:16 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:16 [boss] ERROR: {'advantage': '零食下午茶，员工旅游，通讯补贴，节日福利，定期体检，加班补助，年终奖，带薪年假，补充医疗保险，五险一金',
+ 'business': '企业服务',
+ 'company': 'Veritas',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        The exponential '
+                     'growth of data and the resources needed to manage it is '
+                     'one of the most pressing issues facing business today. '
+                     'And it’s not just\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': 'Veritas',
+ 'company_url': '/gongsi/8a6dea8e3e856f371HV63ti9.html',
+ 'crawl_time': '2020-03-18 10:18:09.318812',
+ 'education': '本科',
+ 'experience': '5-10年',
+ 'financing': '1000-9999人',
+ 'hr_name': '彭女士',
+ 'money': '15-30K',
+ 'postion': 'Linux Python/C++开发工程师',
+ 'postion_describe': 'VERITAS '
+                     '软件公司是在存储管理软件方面处于领先地位的软件提供商，VERITAS的软件主要用于数据保护、应用高可用性和灾难恢复相关领域。VERITAS在全球的25个国家共有超过2500名员工，VERITAS软件公司的解决方案旨在解决当前大数据量商业环境中所面临的最基本的问题。我们的全线软件产品能够工作于异构平台，为用户提供高可用性，以保护其数据，并有效地防止数据遭到灾难性攻击。岗位职责及要求：目前Veritas北京研发中心面向全国招聘Linux操作系统软件开发工程师，我们目前在招职位的编程语言主要是Python，以及C++；如果您对Linux系统非常熟悉，并且可以熟练使用C++,请您投递简历进来，期待与您沟通如果您对Linux非常熟悉，对Python感兴趣，即使没有Python开发的经验，也请投递简历，期待与您沟通。1年开发经验以上都考虑。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/df4de56e9ef60dfb1XF72N--ElU~.html',
+ 'public_time': '2020-03-18 10:18:09.318812',
+ 'scaley': '不需要融资',
+ 'tag': 'Linux-Python',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 清华科技园 创新大厦'}
+2020-03-18 10:18:16 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:16 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:16 [boss] ERROR: {'advantage': '加班补助，带薪年假，节日福利，五险一金，交通补助，零食下午茶，通讯补贴，补充医疗保险，员工旅游，年终奖，定期体检，包吃包住',
+ 'business': '互联网金融',
+ 'company': '旭金科技',
+ 'company_location': '旭金科技',
+ 'company_url': '/gongsi/be9a5303f8f15a7c0HJy2ty-.html',
+ 'crawl_time': '2020-03-18 10:18:10.217257',
+ 'education': '本科',
+ 'experience': '1-3年',
+ 'financing': '10000人以上',
+ 'hr_name': '张女士',
+ 'money': '12-24K',
+ 'postion': '爬虫开发工程师',
+ 'postion_describe': '工作职责:1、负责爬虫和搜索引擎相关的架构的设计和实现；2、完成制定网站内容的抓取及存储。工作要求:1、熟悉tcp，http协议原理；熟悉ajax工作原理；具备一定的的数据结构与算法功底；2、有网络爬虫的工程背景和经验，熟悉常见的反扒策略，并有实际工作经验，包括但不限于验证码，代理，内容加密等；3、精通Python，同时掌握Java更佳。熟悉常用的爬虫框架，包括但不限于Scrapy，Selenium等；4、具有海量数据处理和分布式计算开发经验者优先，有MongoDB实际项目经验优先；5、有搜索引擎、信息检索、机器学习等相关从业经验，熟悉主流分词算法、分类、提取摘要、大规模网页聚类、索引等技术优先；6、有ETL实际项目经验优先；7、有清晰的逻辑思维能力，良好的沟通能力，较强的学习能力；8、熟悉敏捷开发流程，追求高质量的工作成果，有代码洁癖优先。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/7a4b987c8d730dbd1nN639-_ElE~.html',
+ 'public_time': '2020-03-18 10:18:10.217257',
+ 'scaley': '不需要融资',
+ 'tag': 'java爬虫-python爬虫',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区中海广场'}
+2020-03-18 10:18:16 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:16 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:16 [boss] ERROR: {'business': '移动互联网',
+ 'company': '非得通证',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北京非得通证科技有限公司成立于2018年1月份，由短视频业界大咖创立，曾创立并服务于多款数亿级DAU的短视频C端产品。2018年6月份完成数千万天使轮融资，投资方为一下科技；12月份完成A轮数百万美元融资，一下科技领投，新浪、阿里巴巴跟投。公司由pps创始人领衔，携今日头条、百度、腾讯、360、Fa\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '非得通证',
+ 'company_url': '/gongsi/ceeb6db28c97a3801XB62ti-FA~~.html',
+ 'crawl_time': '2020-03-18 10:18:11.932201',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '20-99人',
+ 'hr_name': '孙先生',
+ 'money': '16-22K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '工作职责：1、多类型数据抓取，数据挖掘，进行多平台信息的抓取和分析； 2、对爬虫系统的架构设计与开发； '
+                     '3、深刻理解爬虫系统架构，能对系统架构提出自己的见解和优化方案；4、 '
+                     '实现数据提取、清洗、结构化、入库、统计分析等需求； 5、 '
+                     '建立爬虫监测体系，及时分析及解决爬虫在运行过程中出现的缺陷；6、研究优化算法，提升爬虫系统的稳定性、可扩展性； '
+                     '7、设计爬虫策略和防屏蔽规则，提升网页抓取的效率和质量； '
+                     '8、能独立解决实际开发过程碰到的各类问题。任职要求：1、计算机相关专业，本科及以上学历；3年以上实际爬虫开发、内容提取工作经验；能独立解决实际开发过程碰到的各类问题；2、 '
+                     '熟悉Java 、Python、Groovy等语言的开发，熟悉Linux命令；3、深入了解Http协议 和 '
+                     'web登录认证机制，熟悉web前端，可读懂js代码；4、了解多线程、多进程、网络通信编程相关知识，有过海量数据爬取经验、清洗项目经验； '
+                     '5、掌握网页抓取原理及技术，了解基于Session的登录原理，熟悉基于正则表达式、XPath、CSS等网页信息抽取技术；6、了解APP模拟及接口验签破解技术，了解APP用户授权访问机制，掌握Selenium，APP破解技术优先；7、精通使用爬虫相关技术，如：python, '
+                     'scrapy, selenium, xpath, 正则表达式 '
+                     '但不限于以上技术等,有app研发背景或app爬虫开发经验佳，有逆向经验尤佳；8、掌握简单的验证码识别技术、爬虫高并发技术，流式处理经验者优先；9、有搜索、推荐或信息流相关经验的加分。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/d44ec0c26a20f23e1HV43dm9E1Q~.html',
+ 'public_time': '2020-03-18 10:18:11.932201',
+ 'scaley': '不需要融资',
+ 'tag': '后端开发-Python-数据挖掘',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区望京浦项中心B座6楼'}
+2020-03-18 10:18:16 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:16 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:16 [boss] ERROR: {'advantage': '定期体检，购房福利，餐补，全勤奖，节日福利，带薪年假，不定期培训，商业保险，年终奖，补充医疗保险，五险一金',
+ 'business': '互联网',
+ 'company': '好未来',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北京世纪好未来教育科技有限公司（NYSE：TAL）是一个以智慧教育和开放平台为主体，以素质教育和课外辅导为载体，在全球范围内服务公办教育，助力民办教育，探索未来教育新模式的科技教育公司。2010年10月，好未来的前身学而思在美国纽交所正式挂牌交易，成为国内首家在美上市的中小学教育机构。好未来全面\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '好未来',
+ 'company_url': '/gongsi/efa878c051261c7433Z6.html',
+ 'crawl_time': '2020-03-18 10:18:13.272374',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '盖先生',
+ 'money': '25-30K·14薪',
+ 'postion': 'Python爬虫工程师',
+ 'postion_describe': '绩效奖金14-16个月\n'
+                     '                                \n'
+                     '                                    '
+                     '岗位职责：1、负责爬虫系统的核心架构设计以及系统规划。2、负责行业特定数据的抓取工作。3、结合业务背景，优化爬虫路由调度策略，完善爬虫体系。职位要求：1、计算机相关专业2、有较强的学习能力、喜欢钻研和解决问题、乐于分享3、掌握PC网页抓取原理及技术，包括基于Cookie的登录管理，基于headless的采集，熟悉正则表达式、XPath、Jsoup等网页信息抽取技术。4、对APP采集有丰富经验，包括抓包工具，中间人代理二次开发以及APP模拟器等优先考虑。5、有APP反编译识别，修改内核浏览器经验者，优先考虑。6、熟悉Scrapy、Pyspider、nutch等主流爬虫框架使用，了解js引擎技术等优先考虑7、有数据爬取、通用爬取、爬虫平台搭建处理经验优先考虑8、有机器学习、自然语言处理、图像处理等学习背景和经验的优先考虑9、具备较强的团队协作精神，工作责任心强，良好的沟通、理解和执行能力',
+ 'postion_url': 'https://www.zhipin.com/job_detail/928443d573f4dbe30Xx_2dm-FVU~.html',
+ 'public_time': '2020-03-18 10:18:13.272374',
+ 'scaley': '已上市',
+ 'tag': '网络爬虫技术-移动端-Python-搜索算法-数据挖掘',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 中关村科贸电子城 7层好未来'}
+2020-03-18 10:18:25 [boss] INFO: Boss page:10
+2020-03-18 10:18:25 [boss] INFO: start url :https://www.zhipin.com/c101010100/y_6/?query=python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88&page=10&ka=page-10
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'advantage': '定期体检，包吃，年终奖，带薪年假，补充医疗保险，零食下午茶，节日福利，免费班车，试用期同薪，股票期权，住房补贴，五险一金',
+ 'business': '移动互联网',
+ 'company': '今日头条',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '（有兴趣的同学可以直接发送简历提高效率，看到即回复）公司介绍：字节跳动（今日头条母公司）成立于 2012 '
+                     '年，是一家技术驱动的移动互联网公司。我们致力于通过技术，给用户推荐感兴趣的信息，改变整个内容生产和消费领域。目前产品矩阵包含今日头条、抖音、西瓜视频、抖音火山版、悟空问答、懂车帝，TopBuz\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '今日头条',
+ 'company_url': '/gongsi/a67b361452e384e71XV82N4~.html',
+ 'crawl_time': '2020-03-18 10:18:14.251771',
+ 'education': '本科',
+ 'experience': '1-3年',
+ 'financing': '10000人以上',
+ 'hr_name': '朱先生',
+ 'money': '23-46K',
+ 'postion': '数据抓取工程师',
+ 'postion_describe': '职位描述1、负责头条爬虫的核心技术研发，建设平台化服务2、满足业务团队的数据需求，和业务部门一起优化数据处理流程3、结合新的业务场景，探索研究抓取相关新技术，开发应用新方案职位要求经验1-3年学历本科及以上1、具备强悍的编码能力，有扎实的数据结构和算法功底 '
+                     '2、熟悉linux开发环境，掌握至少一门高级语言：C/C++/Python3、理解http、计算机网络，熟悉HTML、DOM、XPath等4、工作认真细致踏实，较强的学习能力、分析解决问题能力5、有爬虫系统、信息抽取、浏览器内核、大型工程架构经验者优先可通过http://taou.cn/HnL3k投递职位（相当于内推），置顶职位中没找到可在下面【更多职位】的分类里里搜一下',
+ 'postion_url': 'https://www.zhipin.com/job_detail/aae709f84dda79b01XR53ty4GVM~.html',
+ 'public_time': '2020-03-18 10:18:14.251771',
+ 'scaley': 'D轮及以上',
+ 'tag': '数据抓取-python爬虫-计算机网络',
+ 'update_num': 0,
+ 'worker_location': '北京海淀区中航广场'}
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'advantage': '定期体检，带薪年假，零食下午茶，节日福利，补充医疗保险，五险一金，交通补助，餐补，住房补贴，加班补助',
+ 'business': '移动互联网',
+ 'company': '北京字节跳动',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        我们是开发了 '
+                     '《今日头条》《抖音》等应用的团队,2012年成立发展最快的移动互联网公司之一，是一个拥有丰富创业经历和成熟公司经验的靠谱团队，聚集了来自一流学校和公司的顶尖人才，有着全球科技、金融行业最具价值的投资人投资。我们立志用卓越的技术帮助用户发现有价值的信息。我们高效、简单、极致、务实\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '北京字节跳动',
+ 'company_url': '/gongsi/7d01ce6cfe2022030HJ409y-.html',
+ 'crawl_time': '2020-03-18 10:18:16.958215',
+ 'education': '不限',
+ 'experience': '不限',
+ 'financing': '10000人以上',
+ 'hr_name': '张女士',
+ 'money': '20-40K',
+ 'postion': '高级后端研发工程师 — 商业开放平台',
+ 'postion_describe': '职位描述：1、负责商业开放平台的研发工作，为投放管理、DMP服务、数据报表等广告系统提供外部接入能力，优化客户广告投放效果，提升投放效率；2、深度参与业务，改进现有系统架构、核心算法，持续优化现有系统的性能与稳定性；3、负责系统运营和开发效率提升，研发系统基础服务组件，更好更快支持业务迭代；4、指导初、中级工程师，组织技术分享，推动团队整体技术能力提升。职位要求：1、本科(统招)及以上学历，计算机相关专业，3～5年工作经验；2、有扎实的编程能力，有良好的数据结构和算法功底；3、有大型系统架构设计和性能优化能力，有广告业务或者开放平台经验优先；4、优秀的分析和解决问题的能力，对挑战性的问题充满激情；5、有良好的团队合作精神，抗压能力强。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/7988b8129a8d0f200X1y29S6E1I~.html',
+ 'public_time': '2020-03-18 10:18:16.958215',
+ 'scaley': 'D轮及以上',
+ 'tag': 'Python-Go-Web端-Java-C++',
+ 'update_num': 0,
+ 'worker_location': '北京海淀区互联网金融中心'}
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'advantage': '带薪年假，年终奖，女生假，五险一金，补充医疗保险，餐补，节日福利，交通补助，定期体检，通讯补贴',
+ 'business': '在线教育',
+ 'company': '新东方在线',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '新东方在线2005年成立（股票代码：01797.HK），一直致力于用教学产品和科技工具，来打破学习的时间、空间和场景限制，最终为用户的终身学习赋能。得益于优质品牌、强大师资、精品教研，以及前沿科技与教育的结合，新东方在线为每一个学员带来优越的在线学习体验。母公司新东方，耕耘教育行业26年，已经\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '新东方在线',
+ 'company_url': '/gongsi/52b87ce9ef1732770XB62du7EQ~~.html',
+ 'crawl_time': '2020-03-18 10:18:17.882643',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '1000-9999人',
+ 'hr_name': '石女士',
+ 'money': '15-25K·14薪',
+ 'postion': 'python高级开发工程师',
+ 'postion_describe': '岗位职责：     1. 负责应用服务端的设计开发工作     2. '
+                     '搭建系统开发环境，完成系统框架与核心代码开发     3. '
+                     '指导并参与完成需求分析和概要设计，组织并参与技术攻关     4.  编写设计，开发文档任职条件：1.  '
+                     '本科以上学历，计算机相关专业 2.  3年以上python开发经验3.  '
+                     '精通Python语言，具有扎实的计算机基础和编程能力，熟悉常见的算法与数据结构，具有优秀的逻辑思维能力4.  '
+                     '熟悉Web开发流程，熟悉常见的Web开框架如tornado, Django, flask5.  '
+                     '熟悉HTML&CSS， JS前端技术优先6.  '
+                     '具有强烈的责任感，有独立分析和解析问题的能力，有良好的团队合作精神',
+ 'postion_url': 'https://www.zhipin.com/job_detail/a2150e58aaa19df40XR53d28F1c~.html',
+ 'public_time': '2020-03-18 10:18:17.882643',
+ 'scaley': '已上市',
+ 'tag': 'Python-JavaScript-HTML-CSS-Web端-Django-Flask-Tornado',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 新东方南楼'}
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'business': '移动互联网',
+ 'company': '小米科技有限责任公司',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北京小米科技有限责任公司成立2010年4月，是一家专注于智能产品自主研发的移动互联网公司。“为发烧而生”是小米的产品概念。小米公司首创了用互联网模式开发手机操作系统、发烧友参与开发改进的模式。2014年12月14日晚，美的集团发出公告称，已与小米科技签署战略合作协议，小米12\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '小米科技有限责任公司',
+ 'company_url': '/gongsi/7dd02efaee4a603c0nN_3925.html',
+ 'crawl_time': '2020-03-18 10:18:18.928001',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '魏女士',
+ 'money': '25-45K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '职位描述：•\t设计和开发分布式网络爬虫系统，进行多平台信息的抓取和分析工作，实时监控爬虫的进度和警报反馈•\t'
+                     '网页信息和APP数据抽取、清洗、消重等工作职位要求：•\t有扎实的算法和数据结构能力•\t'
+                     '熟悉整个爬虫的设计及实现流程，有大规模网页信息抽取开发经验•\t熟悉各种反爬虫技术，有分布式爬虫架构经验•\t'
+                     '掌握http协议，熟悉html、dom、xpath等常见的数据抽取技术•\t'
+                     '有大规模数据处理、数据挖掘、信息提取等经验者优先',
+ 'postion_url': 'https://www.zhipin.com/job_detail/e8a94271b47dce690X152NS6FVM~.html',
+ 'public_time': '2020-03-18 10:18:18.928001',
+ 'scaley': '已上市',
+ 'tag': 'HTML-分布式技术-网络爬虫技术-数据挖掘-数据处理-数据抽取-数据清洗',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 小米6期 科利源大厦'}
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'advantage': '零食下午茶，五险一金，节日福利，定期体检，带薪年假，加班补助，补充医疗保险，年终奖，股票期权',
+ 'business': 'O2O',
+ 'company': '一亩田',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '一亩田是一家基于移动互联网技术、深耕农产品产地、提供产业链服务、提升农业生产水平和促进农产品流通效率的互联网公司。自2011年成立以来，着眼于全品类农产品，打造了全国领先的农业服务平台。平台定位于推动“农产品进城”，致力于“让每一亩田更有价值”。一亩\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '一亩田',
+ 'company_url': '/gongsi/b4f11fb7a32c37761nB62Q~~.html',
+ 'crawl_time': '2020-03-18 10:18:19.924385',
+ 'education': '本科',
+ 'experience': '5-10年',
+ 'financing': '500-999人',
+ 'hr_name': '刘女士',
+ 'money': '25-45K·15薪',
+ 'postion': '资深python开发工程师',
+ 'postion_describe': '●【岗位职责】1. 对现有的撮合服务进行梳理和优化，提升迭代速度和质量；2. '
+                     '组建和管理研发团队，帮助团队成员成长；3. 参与撮合工具方向的讨论与决策，积极推动业务发展；●【岗位要求】1. '
+                     '5年以上服务器端软件开发经验；2. 熟悉python或者golang；（愿意转开发语言也可以）3. '
+                     '具有拼搏精神和工作热情； 4. 具备良好的沟通能力和团队合作精神，愿意帮助他人成长；',
+ 'postion_url': 'https://www.zhipin.com/job_detail/199de802b84b229a0X142929FFQ~.html',
+ 'public_time': '2020-03-18 10:18:19.924385',
+ 'scaley': 'C轮',
+ 'tag': 'Python-Go-计算机软件',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 一人一亩田网络科技有限公司 北京市海淀区西小口路66号中关村东升科技园B-6号楼A座六层'}
+2020-03-18 10:18:25 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:25 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:25 [boss] ERROR: {'advantage': '年终奖，五险一金，定期体检，零食下午茶，带薪年假，补充医疗保险',
+ 'business': '互联网',
+ 'company': 'ADVANCE',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        公司介绍ADVANCE.AI '
+                     '是一家拥有雄厚资金和人才实力的跨国金融科技公司，业务涵盖中国、新加坡、印尼等国家。ADVANCE.AI '
+                     '以“技术赋能”的角色，帮助泛亚太地区的互联网公司、金融机构、金融科技公司和电信运营商等合作伙伴实现更好的金融服务。核心分支公司设有北京\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': 'ADVANCE',
+ 'company_url': '/gongsi/d96c18ce365ee0f10HV42tm4.html',
+ 'crawl_time': '2020-03-18 10:18:21.291615',
+ 'education': '本科',
+ 'experience': '5-10年',
+ 'financing': '500-999人',
+ 'hr_name': '祁女士',
+ 'money': '22-35K·14薪',
+ 'postion': '高级Python爬虫工程师 (MJ000130)',
+ 'postion_describe': '岗位职责：1. 负责爬虫框架的设计和开发，实现对于多种数据源类型的支持，并保证灵活易用。2. '
+                     '负责代理池的设计和开发，研究封锁和反封锁方案并实施。3. 负责具体网站和应用的信息抓取逻辑的开发。4. '
+                     '负责线上系统的稳定高效运行，向公司内外部客户提供及时有效的技术支持。任职要求1、统招本科以上学历，计算机或数学相关专业2、基础扎实，熟练掌握 '
+                     'Python，5年以上开发经验3、至少熟悉一种如Tornado 、Django 或 Flask 等 Python '
+                     '框架4、熟悉 MySQL/MongoDB/Redis 等常用数据库及多线程编程，熟悉 Git/Svn '
+                     '等常用的代码版本控制工具5、出色的逻辑思维能力和推动能力，以及良好的沟通协调能力，有良好的英文读写能力，有良好的英语口语能力优先6、对代码质量要求严格，遵循业界 '
+                     'Python 代码规范，有代码洁癖加分，重视 Code Review7、团队管理经验',
+ 'postion_url': 'https://www.zhipin.com/job_detail/dec18ce4f25ea3cf0Xd_2N-5ElQ~.html',
+ 'public_time': '2020-03-18 10:18:21.291615',
+ 'scaley': 'C轮',
+ 'tag': 'Python-网络爬虫技术-MySQL-Redis-NoSQL-MongoDB-Django-Flask',
+ 'update_num': 0,
+ 'worker_location': '北京市 朝阳区 福码大厦B座 19层'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '年终奖，打车报销，节日福利，五险一金',
+ 'business': '互联网',
+ 'company': '会找房',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '会找房是国内领先的长租公寓SaaS服务平台，自成立以来，先后获得互联网巨头（京东金融、腾讯）、国内著名VC（源码资本）的5轮投资，成为业内融资次数最多，融资金额最大的D轮标杆企业。       '
+                     '公司瞄准居住的万亿市场，长期深耕。5年以来，公司围绕租赁行业的痛点，成功打造了“3个基建，2\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '会找房',
+ 'company_url': '/gongsi/4a84d82fbd84b3e603d53Q~~.html',
+ 'crawl_time': '2020-03-18 10:18:23.031541',
+ 'experience': '3-5年',
+ 'financing': '100-499人',
+ 'hr_name': '关先生',
+ 'money': '15-25K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '工作职责：1、负责研究网站特征、多平台信息抓取、网站的模拟仿生抓取和页面内容的提取分析；2、优化抓取策略，充分利用软硬件资源，跟进爬虫环境的配置升级；3、分析爬虫系统的技术缺陷，对策略架构做出合理地调整和改进；4、对爬虫数量和质量负责，促进爬虫数据的有效利用。任职资格：1、熟悉Linux/UNIX，3年及以上Python爬虫开发经验，熟悉Scrapy、Pyspider等主流爬虫框架使用，熟练使用MongoDB、MySQL、Redis、消息队列等常用组件，至少独立负责过2个完整爬虫项目；2、精通网页抓取原理及技术，具有丰富的反爬应对经验；3、善于总结，主动学习新技术，直面困难敢于承担责任，有海量数据抓取、网站开发经验者优先；4、有IOS、AndroidAPP逆向、数据抓取经验者优先。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/9b65f4c32314f6c10X183NS5GFA~.html',
+ 'public_time': '2020-03-18 10:18:23.031541',
+ 'scaley': 'D轮及以上',
+ 'tag': 'Python-网络爬虫技术-Linux-MySQL-Redis-NoSQL-MongoDB-Scrapy',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 华控大厦'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'business': '互联网',
+ 'company': 'ALIYUN',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '持续招聘大量技术产品岗位，base杭州、上海、北京阿里巴巴集团旗下云计算品牌，全球卓越的云计算技术和服务提供商。\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': 'ALIYUN',
+ 'company_url': '/gongsi/5a18367703b9f7201XR52NS-.html',
+ 'crawl_time': '2020-03-18 10:18:25.204408',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '吴先生',
+ 'money': '20-40K',
+ 'postion': '容器云架构师/高级开发工程师',
+ 'postion_describe': '岗位描述：1、基于Docker与Kubernetes容器技术设计和实现阿里云专有云PaaS平台，包括DevOps、IaC、三方产品接入等平台架构设计和开发；2、设计和实现容器云平台，包括应用中台、数据中台和智能中台能力3、负责实现云原生体系下复杂应用的编排和自动化运维，实现阿里PaaS和SaaS等产品接入和输出岗位要求：1、熟练掌握Go、Java或Python语言开发2、精通Docker, '
+                     'Kubernetes等主流容器技术，了解底层实现原理，对相关存储、网络插件有深入了解3、熟悉DevOps流程设计和相关工具链，如Ansible, '
+                     'Terraform等工具4、熟悉分布式系统架构，具有分布式高可用系统设计经验;5、具备较好的逻辑思考能力、沟通能力、学习能力，工作中积极主动、有责任心、抗压性强',
+ 'postion_url': 'https://www.zhipin.com/job_detail/ebb3fe321ecbcd6e1HF839u5FFM~.html',
+ 'public_time': '2020-03-18 10:18:25.204408',
+ 'scaley': '不需要融资',
+ 'tag': '后端开发-系统架构-Linux',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区绿地中心'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '五险一金，补充医疗保险，带薪年假，内购优惠，住房免息贷款，零食下午茶，节日福利，包吃包住，包吃，免费班车，员工旅游，股票期权，年终奖，五险一金',
+ 'business': '互联网',
+ 'company': '唯品会',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '唯品会（中国）有限公司（以下简称“唯品会”）全球总部设在广州，主要经营互联网在线销售品牌折扣商品，销售产品涵盖中高端服装、鞋子、箱包、家居用品、化妆品、奢侈品等。自2012年第4季度以来，唯品会已连续26个季度实现盈利，现已发展成为全球最大的特卖电商和全国净资产收益率排名第一\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '唯品会',
+ 'company_url': '/gongsi/b72f700dda59df7b33B90tU~.html',
+ 'crawl_time': '2020-03-18 10:18:26.703747',
+ 'education': '不限',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'money': '25-40K',
+ 'postion': '后台开发工程师',
+ 'postion_describe': '后台开发工程师岗位职责1、负责数据平台的研发，建设数据集市； 2、负责金融BI指标体系、数据模型的构建； '
+                     '3、制定统一的数据规范，负责数据质量，元数据的监控，整合； '
+                     '4、理解并合理抽象不同业务需求，做较通用和系统性的支持5、分析并解决性能瓶颈，跟团队成员分享最佳实践，参与code '
+                     'review任职资格至少精通一门 Python、go 、C/C++ '
+                     '等主流开发语言Linux平台下的开发，熟练使用Shell命令，熟练使用MySQL命令，熟悉Git团队开发流程具有良好的沟通能力，良好的团队合作精神，乐于分享技术经验加分项：ACM、Kaggle等算法竞赛获奖或多年持续参赛者优先发表过算法或数据挖掘论文者优先有技术Blog、有个人软件项目、有个人网站者优先',
+ 'postion_url': 'https://www.zhipin.com/job_detail/19ad2013bd4c62b81nx809S-Elc~.html',
+ 'public_time': '2020-03-18 10:18:26.703747',
+ 'scaley': '已上市',
+ 'tag': 'Linux-Python-Shell',
+ 'update_num': 0,
+ 'worker_location': '北京朝阳区莱锦文化创意产业园cn05'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '年终奖，带薪年假，节日福利，补充医疗保险，零食下午茶，定期体检，交通补助，餐补，加班补助，健身房，通讯补贴，五险一金',
+ 'business': '数据服务',
+ 'company': '中译语通',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '中译语通科技股份有限公司(Global Tone Communication Technology Co., '
+                     'Ltd.，简称GTCOM)是全球领先的金融科技和科研数据分析公司，通过先进的自然语言处理与语义计算技术对全球海量数据进行挖掘与分析，构建行业知识图谱、算法模型与可视化分析平台，应用于金融、科\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '中译语通',
+ 'company_url': '/gongsi/dd3f3e288bd646ed1ndy2Ns~.html',
+ 'crawl_time': '2020-03-18 10:18:28.386912',
+ 'education': '本科',
+ 'experience': '5-10年',
+ 'financing': '500-999人',
+ 'hr_name': '李女士',
+ 'money': '20-40K',
+ 'postion': '数据采集工程师',
+ 'postion_describe': '境内外开源数据采集熟悉各种反扒策略可编写采集软件',
+ 'postion_url': 'https://www.zhipin.com/job_detail/a25d101cf279b4c30HR83tS0Elo~.html',
+ 'public_time': '2020-03-18 10:18:28.386912',
+ 'scaley': 'C轮',
+ 'tag': '网络爬虫技术-搜索引擎技术',
+ 'update_num': 0,
+ 'worker_location': '北京石景山区中铁建设大厦'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '带薪年假，口腔医院优惠，零食下午茶，五险一金，补充医疗保险，全勤奖，加班补助，餐补，交通补助，年终奖，节日福利',
+ 'business': '游戏',
+ 'company': '北京开天创世',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北京开天创世科技有限公司是一家以研发、运营于一体的朝气蓬勃的手游公司，成立于2013年，公司核心成员来自腾讯、盛大、百度、完美等知名企业，员工平均游戏研发经验5年以上，其核心成员超10年的游戏开发和管理经验。公司与腾讯,上海盛大网络、北京天神娱乐等行业巨头建立了战略合作伙伴关系。公司拥有国内\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '北京开天创世',
+ 'company_url': '/gongsi/9cd39ca73936f84e03B839-1.html',
+ 'crawl_time': '2020-03-18 10:18:29.981481',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '100-499人',
+ 'hr_name': '谢先生',
+ 'money': '15-30K',
+ 'postion': '爬虫工程师',
+ 'postion_describe': '技能要求：Python，java，爬虫，数据抓取，网络爬虫1、3年及以上爬虫项目开发经验；2、熟悉Python/C++/Java三种编程语言中的至少一种，熟悉爬虫方向开发和应用；3、熟悉网络编程、熟悉多线程机制、有过Socket '
+                     'HTTP网络编程项目经验，具有爬虫系统框架设计能力，以及爬虫项目规划能力；4、熟悉HTML，熟练正则、XPath等Web信息提取技术；5、熟悉常见的加解密算法及其原理，具有大型web登录分析和搜索相关技术研发经验者优先；6、熟悉多线程编程，有高并发分布式服务器开发经验优先；7、熟悉Mysql，redis，mongdb三者至少之一，有过数据库调优和海量数据存储经验优；做过12306抢票业务的，在携程、马蜂窝、飞猪、去哪儿有过经验的请直接联系我。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/83fabe6674dc35170X152Nu0Elc~.html',
+ 'public_time': '2020-03-18 10:18:29.981481',
+ 'scaley': 'D轮及以上',
+ 'tag': 'Python-Java-C++-HTML-分布式技术-网络爬虫技术-Web端-MySQL',
+ 'update_num': 0,
+ 'worker_location': '北京市 朝阳区 利泽中园-二区 208号开天创世'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '员工旅游，定期体检，加班补助，带薪年假，节日福利，五险一金，餐补，年终奖，交通补助',
+ 'business': '汽车生产',
+ 'company': '北汽福田',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '北汽福田汽车股份有限公司（简称福田汽车），是一家跨地区、跨行业、跨所有制的国有控股上市公司。总部位于北京市昌平区，现有资产近300多亿元，品牌价值达671.27[1]亿元，员工近4万人，是一个以北京为管理中心，在京、津、鲁、冀、湘、鄂、辽、粤、新等9个省市区拥有整车和零部件事业部，研发分支机构分布在\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '北汽福田',
+ 'company_url': '/gongsi/9d90495aef9473301Hdy3tS1.html',
+ 'crawl_time': '2020-03-18 10:18:30.937893',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '10000人以上',
+ 'hr_name': '方先生',
+ 'money': '15-30K',
+ 'postion': 'Python开发工程师',
+ 'postion_describe': '1. 3年以上服务器端开发经验，并且有2年以上Python语言开发经验； 2. '
+                     '精通Python语言，熟练使用常用模块，使用过Django/Tornado等web框架； 3. '
+                     '熟悉Restfull-API编程，熟悉mysql数据库的使用，熟悉Redis/Memcached的使用，熟悉elastic '
+                     'search的使用； 4. 具备良好的编码习惯； 5. '
+                     '熟悉常用算法和数据结构，熟悉基础的网络知识，精通网络编程和多线程； 6. '
+                     '良好的英文阅读能力，能够独立阅读开源社区的英文文档，并进行相关代码的编写。 7. '
+                     '具有良好的自学能力，能通过研究开源项目来解决开发中遇到的难题； 8. '
+                     '熟练使用Linux，熟悉jenkins等CI/CD工具链，有独立搭建大型系统的能力； 9. '
+                     '熟悉HTML，javascript等技术，熟悉HTTP协议',
+ 'postion_url': 'https://www.zhipin.com/job_detail/ec19f17f7ff77d510XFy29m_EFQ~.html',
+ 'public_time': '2020-03-18 10:18:30.937893',
+ 'scaley': '已上市',
+ 'tag': 'Python-JavaScript-HTML-搜索引擎技术-Linux-MySQL-Redis-Memcached',
+ 'update_num': 0,
+ 'worker_location': '北京昌平区北汽福田汽车股份有限公司3号楼701'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'business': '数据服务',
+ 'company': '罗格数据',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        '
+                     '罗格数据是一家专业从事税收大数据预测分析和决策管理的创新型公司。公司拥有一支专注、专业、高效、成熟的顶尖交叉学科业务和技术团队，通过对大数据和数学算法在风险控制、行为分析领域内的开创性使用，结合税务、金融、经济学分析等方面的丰富经验和专业能力，成为“互联网+税收大数据”领域\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '罗格数据',
+ 'company_url': '/gongsi/413ceb709db9504303R60927.html',
+ 'crawl_time': '2020-03-18 10:18:32.452454',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '20-99人',
+ 'hr_name': '罗女士',
+ 'money': '20-30K',
+ 'postion': 'python爬虫工程师',
+ 'postion_describe': '岗位职责：1. 负责数据抓取系统的核心技术研究、系统规划, 采集系统架构和数据存储设计；2. '
+                     '负责数据抓取核心算法的策略优化，提升数据抓取的效率和质量；优化采集策略和防屏蔽规则；3. '
+                     '多平台信息的抓取和分析，负责抓取信息的抽取、数据清洗、数据解析入库、数据分析等研发工作，持续改进与迭代完善；4. '
+                     '理解系统数据处理流程以及业务功能需求；5. 突破web端、app解决反爬问题(带领初级工程师采集数据)6. '
+                     '主要业务主流电商、新闻媒体、短视频(项目不断，挑战不断)任职要求：1. '
+                     '熟练使用Python语言，熟悉数据抓取方向开发和应用；2. '
+                     '熟悉Scrapy或Webmagic等抓取框架的机制和实现，具有采集系统框架设计能力，以及数据抓取项目规划能力；3. '
+                     '熟悉Mysql，redis，mongdb等数据库，有过数据库调优和海量数据抓取解析经验优先；4. '
+                     '擅长Js逆向、App逆向、脱壳砸壳，掌握Xposed、Jadx等逆向全家桶5. '
+                     '有远程调用、Hook经验，擅长So层逆向更佳6.有大规模采集系统实现的经验，采集架构，数据挖掘，搭建数据仓库经验者优先；7.大的电商全站采集经验优先！',
+ 'postion_url': 'https://www.zhipin.com/job_detail/caa2a266d2caa3390Xd42t--EFE~.html',
+ 'public_time': '2020-03-18 10:18:32.452454',
+ 'scaley': 'B轮',
+ 'tag': 'Python-JavaScript-网络爬虫技术-MySQL-Redis-MongoDB',
+ 'update_num': 0,
+ 'worker_location': '北京市 海淀区 中关村国际创新大厦 301'}
+2020-03-18 10:18:38 [boss] ERROR: Spider name:boss exec sql erro
+2020-03-18 10:18:38 [boss] ERROR: [Failure instance: Traceback: <class 'MySQLdb._exceptions.OperationalError'>: (2002, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:932:_bootstrap_inner
+c:\users\harry\appdata\local\programs\python\python38\lib\threading.py:870:run
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_threadworker.py:46:work
+e:\pachong\scripy_venv\lib\site-packages\twisted\_threads\_team.py:190:doWork
+--- <exception caught here> ---
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:250:inContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\threadpool.py:266:<lambda>
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:122:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\python\context.py:85:callWithContext
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:460:_runInteraction
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:36:__init__
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:76:reconnect
+e:\pachong\scripy_venv\lib\site-packages\twisted\enterprise\adbapi.py:427:connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\__init__.py:84:Connect
+e:\pachong\scripy_venv\lib\site-packages\MySQLdb\connections.py:179:__init__
+]
+2020-03-18 10:18:38 [boss] ERROR: {'advantage': '零食下午茶，五险一金，带薪年假，股票期权，定期体检，年终奖',
+ 'business': '互联网金融',
+ 'company': '华兴资本',
+ 'company_describe': '公司介绍\n'
+                     '                                    \n'
+                     '                                        华兴资本 '
+                     '是中国领先的独立投资银行，致力于为基于互联网与信息技术发展创新商业模式的中国顶尖“新经济”创业家提供财务顾问服务。公司业务包括私募融资、公开募股、并购、销售交易以及各行业证券研究，主要关注行业包括TMT(科技、媒体和通信)、教育、医疗和消费品等。华兴资本 '
+                     '总\n'
+                     '                                    \n'
+                     '                                    查看全部',
+ 'company_location': '华兴资本',
+ 'company_url': '/gongsi/6513a1dc379abc633n1_2w~~.html',
+ 'crawl_time': '2020-03-18 10:18:33.995994',
+ 'education': '本科',
+ 'experience': '3-5年',
+ 'financing': '500-999人',
+ 'hr_name': '赵女士',
+ 'money': '15-25K',
+ 'postion': '爬虫数据工程师',
+ 'postion_describe': '高级爬虫数据工程师（专家优先）岗位职责：1. 负责数据抓取系统的核心技术研究、系统规划, '
+                     '爬虫系统架构和数据存储设计，满足金融数据建设需求；2. '
+                     '负责数据抓取核心算法的策略优化，提升数据抓取的效率和质量；优化爬虫策略和防屏蔽规则；3. '
+                     '多平台信息的抓取和分析，负责抓取信息的抽取、数据清洗、数据解析入库、数据分析等研发工作，持续改进与迭代完善；4.理解系统数据处理流程以及业务功能需求； '
+                     '任职要求：1、掌握Python语言，熟悉数据抓取方向开发和应用；2、熟悉Scrapy或Webmagic等抓取框架的机制和实现，具有爬虫系统框架设计能力，以及数据抓取项目规划能力；3、熟悉Mysql，redis，mongdb等数据库，有过数据库调优和海量数据抓取解析经验优先；4、有大规模爬虫系统实现的经验，爬虫架构，数据挖掘，搭建数据仓库经验者优先； '
+                     '您将获得：与来自国际国内投资投行圈及互联网领域的顶尖大牛共事、晋升发展空间不设限、完善的五险一金及商保、薪酬期权激励、多样化福利、积极简单的工作氛围。',
+ 'postion_url': 'https://www.zhipin.com/job_detail/5cbf550e437bfefd0XZy0926E1Y~.html',
+ 'public_time': '2020-03-18 10:18:33.995994',
+ 'scaley': '不需要融资',
+ 'tag': 'Python-网络爬虫技术-MySQL-NoSQL-Redis-MongoDB-数据挖掘-数据分析',
+ 'update_num': 0,
+ 'worker_location': '北京盈科中心'}
+2020-03-18 10:18:47 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 10 pages/min), scraped 36 items (at 36 items/min)
+2020-03-18 10:19:50 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 84 items (at 48 items/min)
+2020-03-18 10:20:50 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 126 items (at 42 items/min)
+2020-03-18 10:21:50 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 173 items (at 47 items/min)
+2020-03-18 10:22:49 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 220 items (at 47 items/min)
+2020-03-18 10:23:51 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 264 items (at 44 items/min)
+2020-03-18 10:24:39 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 0 pages/min), scraped 296 items (at 32 items/min)
+2020-03-18 10:24:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-03-18 10:24:46 [boss] INFO: Boss webdrive closed
+2020-03-18 10:24:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3877,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 2591582,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'elapsed_time_seconds': 428.690119,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 18, 2, 24, 46, 25566),
+ 'item_scraped_count': 300,
+ 'log_count/ERROR': 84,
+ 'log_count/INFO': 38,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2020, 3, 18, 2, 17, 37, 335447)}
+2020-03-18 10:24:48 [scrapy.core.engine] INFO: Spider closed (finished)

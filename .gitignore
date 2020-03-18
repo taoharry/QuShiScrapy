@@ -1,0 +1,9 @@
+tutorial
+dbs
+job_message/build
+job_message/project.egg-info
+job_message/job_message/lagou.py
+*.pyc
+_*
+*-*.dll
+scripy_venv/Scripts

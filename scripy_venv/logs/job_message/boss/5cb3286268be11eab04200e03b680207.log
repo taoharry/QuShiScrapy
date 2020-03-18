@@ -1,0 +1,26 @@
+2020-03-18 10:15:41 [scrapy.utils.log] INFO: Scrapy 2.0.0 started (bot: job_message)
+2020-03-18 10:15:41 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-18 10:15:41 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'job_message',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'LOG_FILE': 'logs\\job_message\\boss\\5cb3286268be11eab04200e03b680207.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'job_message.spiders',
+ 'SPIDER_MODULES': ['job_message.spiders']}
+2020-03-18 10:15:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'job_message.middle.spider_stats.SpiderStatsMid']
+2020-03-18 10:15:41 [twisted] CRITICAL: Unhandled error in Deferred:
+2020-03-18 10:15:41 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "e:\pachong\scripy_venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "e:\pachong\scripy_venv\lib\site-packages\scrapy\crawler.py", line 88, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "e:\pachong\scripy_venv\lib\site-packages\scrapy\crawler.py", line 100, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "e:\pachong\scripy_venv\lib\site-packages\scrapy\spiders\__init__.py", line 49, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument '_job'

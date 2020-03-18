@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS job_message DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci;
+USE job_message;
+CREATE TABLE IF NOT EXISTS boss_name(
+    id int PRIMARY KEY AUTO_INCREMENT ,
+    postion VARCHAR(300) NOT NULL  COMMENT '职位信息',
+    company_location VARCHAR(300) DEFAULT '' COMMENT '公司位置',
+    money  VARCHAR(300) DEFAULT '' COMMENT '薪资范围',
+    experience VARCHAR(300) DEFAULT '' COMMENT '经验',
+    education VARCHAR(300) DEFAULT '' COMMENT '学历',
+    tag VARCHAR(300) DEFAULT '' COMMENT '技能标签',
+    company VARCHAR(300) DEFAULT '' COMMENT '公司',
+    business VARCHAR(300) DEFAULT '' COMMENT '行业',
+    scaley VARCHAR(300) DEFAULT '' COMMENT '规模',
+    financing VARCHAR(300) DEFAULT '' COMMENT '融资',
+    advantage VARCHAR(300) DEFAULT '' COMMENT '优势',
+    public_time VARCHAR(300) DEFAULT '' COMMENT '发布时间',
+    crawl_time VARCHAR(300) DEFAULT '' COMMENT '爬取时间',
+    postion_url VARCHAR(300) DEFAULT '' COMMENT '职位详细',
+    company_url VARCHAR(300) DEFAULT '' COMMENT '公司详细',
+    update_num int(100) DEFAULT 0 COMMENT '更新次数',
+    hr_name VARCHAR(300) DEFAULT '' COMMENT 'hr名字',
+    postion_describe TEXT DEFAULT '' COMMENT '职位描述',
+    worker_location varchar(1000)  DEFAULT '' COMMENT '工作地址',
+    company_describe TEXT DEFAULT '' COMMENT '公司描述',
+    md5_postion_url varchar(40) UNIQUE DEFAULT '' COMMENT 'url去重用'
+);
